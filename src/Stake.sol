@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+/* // SPDX-License-Identifier: MIT
 pragma solidity >0.8.17 <0.8.21;
 import "../lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
@@ -26,3 +26,4 @@ contract NewStake is ERC20 {
         require(stopStake() == true);
     }
 }
+ */

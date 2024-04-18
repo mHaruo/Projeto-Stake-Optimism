@@ -1,8 +1,8 @@
 import { Web3 } from 'web3';
+import config from '../config.json'
 
-/* require("dotenv").config();
-const ABI = require('./abi.json');
-const myContract = process.env.WALLET_ADDRESS; */
+const walletAdress = config.WALLET_ADDRESS
+const ABI = require('../abi.json');
 
 export async function getMetaMaskProvider() {
 
@@ -124,3 +124,5 @@ web3.eth.getTransactionCount(TokenOwner, (err, count) => {
     });
 }
 }); */
+
+
