@@ -1,8 +1,8 @@
 import { Web3 } from 'web3';
-import config from '../config.json'
+import config from './config.json'
 
 const walletAdress = config.WALLET_ADDRESS
-const ABI = require('../abi.json');
+const ABI = require('./abi.json');
 
 export async function getMetaMaskProvider() {
 

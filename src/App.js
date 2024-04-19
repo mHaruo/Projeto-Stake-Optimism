@@ -1,7 +1,8 @@
-import { getMetaMaskProvider, transfer } from "./MetamaskService"
-import config from '../config.json'
+import { getMetaMaskProvider, transfer } from "./MetaMaskServices"
+import config from './config.json'
 
 const contaTeste = config.TESTE_TRANSFER;
+
 function App() {
 
   /* const [message, setMessage] = useState("");
@@ -21,9 +22,15 @@ function App() {
      console.log(e);
    }
   } */
-
   function transferClick() {
-    transfer("0x2E72cbF5eeA8c97892FBB4be33fBdFBfF12C6e6A", contaTeste, "0.01")
+    const valorInput = document.getElementById('valorStake').value;
+
+    if (!valorInput) {
+      alert('Por favor, insira um valor válido.');
+      return;
+    }
+
+    transfer("0x2E72cbF5eeA8c97892FBB4be33fBdFBfF12C6e6A", contaTeste, Number(valorInput));
   }
 
   return (
@@ -35,7 +42,7 @@ function App() {
         <br />
         <button onClick={transferClick}>Transfer</button>
         <br />
-        <input type="number" value="Valor do deposito" id='valorStake'></input>
+        <input type="number" placeholder="Valor do deposito" id='valorStake'></input>
 
       </div >
     </>
