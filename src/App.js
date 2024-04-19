@@ -1,3 +1,4 @@
+import Web3 from "web3";
 import { getMetaMaskProvider, transfer } from "./MetaMaskServices"
 import config from './config.json'
 
@@ -22,15 +23,18 @@ function App() {
      console.log(e);
    }
   } */
-  function transferClick() {
-    const valorInput = document.getElementById('valorStake').value;
+  async function transferClick() {
+    const web3 = new Web3(window.ethereum);
+    const wallet = await web3.eth.getAccounts();
+    const walletConectada = wallet[0];
 
+    const valorInput = document.getElementById('valorStake').value;
     if (!valorInput) {
       alert('Por favor, insira um valor válido.');
       return;
     }
 
-    transfer("0x2E72cbF5eeA8c97892FBB4be33fBdFBfF12C6e6A", contaTeste, Number(valorInput));
+    transfer(walletConectada, contaTeste, Number(valorInput));
   }
 
   return (
