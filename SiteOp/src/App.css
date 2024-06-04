@@ -1,0 +1,111 @@
+style
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: 0;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./Screenshot\ 2024-03-19\ 183747.png');
+        background-size: 100%;
+        /*background-repeat: no-repeat;*/
+        background: z-index 0;
+    }
+        
+    .conectar {display: absolute;
+        position: absolute;
+        right: 120px;
+        top: 75px;
+        width: 180px;
+        height: 40px;
+        z-index: 1;
+        font-size: 20px;
+        zoom: 1;
+        -ms-zoom: 1;
+        -ms-zoom: 100%;
+        border-radius: 20px;
+        box-shadow: 0 2px 6px #999;
+        background-color: #b1f795;
+    }
+
+    .stake {display: absolute;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        width: 300px;
+        height: 40px;
+        z-index: 1;
+        font-size: 20px;
+        zoom: 1;
+        -ms-zoom: 1;
+        -ms-zoom: 100%;
+        border-radius: 20px;
+        box-shadow: 0 2px 6px #999;
+        background-color: #b1f795;
+    }
+
+    .removestake {display: absolute;
+        position: absolute;
+        left: 100px;
+        top: 275px;
+        width: 300px;
+        height: 40px;
+        z-index: 1;
+        font-size: 20px;
+        zoom: 1;
+        -ms-zoom: 1;
+        -ms-zoom: 100%;
+        border-radius: 20px;
+        box-shadow: 0 2px 6px #999;
+        background-color: #b1f795;
+    }
+
+    .claimnft {display: absolute;
+        position: absolute;
+        left: 100px;
+        top: 400px;
+        width: 300px;
+        height: 40px;
+        z-index: 1;
+        font-size: 20px;
+        zoom: 1;
+        -ms-zoom: 1;
+        -ms-zoom: 100%;
+        border-radius: 20px;
+        box-shadow: 0 2px 6px #999;
+        background-color: #b1f795;
+
+    }
+
+    .amountadd {display: absolute;
+      position: absolute;
+      left: 450px;
+      top: 200px;
+      width: 200px;
+      height: 35px;
+      z-index: 1;
+      font-size: 20px;
+      zoom: 1;
+      -ms-zoom: 1;
+      -ms-zoom: 100%;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px #999;
+      
+  }
+
+  .amountrem {display: absolute;
+      position: absolute;
+      left: 450px;
+      top: 275px;
+      width: 200px;
+      height: 35px;
+      z-index: 1;
+      font-size: 20px;
+      zoom: 1;
+      -ms-zoom: 1;
+      -ms-zoom: 100%;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px #999;
+      
+  }
